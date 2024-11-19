@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--link a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--link a mi css-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--script de boostrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="modal fade" id="miModal" tabindex="-1" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header"> 
+              <h1 class="modal-title" id="miModal"> Contacto </h1>
+            </div>
+            <div class="modal-body">
+                <form action="codigo.php" method="post" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Mail</label>
+                      <input type="email" name="email" id="email" class="form-control" required>
+                      <div class="invalid-feedback">Mail obligatorio</div> <!-- Mensaje de error -->
+                      
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="Mensaje" class="form-label">Mensaje</label>
+                      <textarea name="Mensaje" id="Mensaje" class="form-control" required ></textarea>
+                      <div class="invalid-feedback">Escribe un mensaje</div> <!-- Mensaje de error -->
+                      <div class="valid-feedback">Envianos tu mensaje!</div> <!-- Mensaje de validacion -->
+                    </div>
+                  
+                    <button class="btn btn-secondary mt-3">Enviar</button>
+                  </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+         
+            </div>
+          </div>
+        </div>
+      </div>  
+    <nav class="navbar sticky-top navbar-expand-md bg-dark-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> Mora Casal <img width="24" height="24" src="icono 1.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Menu" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="Menu">
+            <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+              <li class="nav-item"> 
+               <a class="nav-link active btn btn-secondary text-light" href="index.html">Home</a> </button> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/moracasal.lab?igsh=a3d6YjNtM3pxajNx">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.behance.net/moracasal">Behance</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    <header class= "container-fluid"></header>
+    <main class="container-lg">
+      <div>
+          <img src="Mesa de trabajo 2.jpg" class="img-fluid" alt="intro">
+      </div>
+      <h1 class="text-start col-md-6 col-lg-4"> Mi formación, Mi perspectiva, Mi diseño</h1>
+      <h2> "El diseño es mucho más de lo que creen, va más allá de lo estético, el diseño tiene sentido, tiene mensaje, tiene vida y por sobre todo tiene impacto."</h2>
+    
+      <div class="row justify-content-between">
+        <div class="col-md-6 col-lg-3 ">
+            <h2> Diseño Gráfico</h2>
+            <p>El diseño gráfico es la disciplina que me permite comunicar visualmente ideas y conceptos de manera clara y atractiva. A través de la tipografía, el color y la composición, el diseño gráfico transforma la información en mensajes visuales impactantes. Esta disciplina es fundamental para crear una identidad, tanto para marcas como para proyectos, logrando una conexión y comunicación inmediata con el público.</p>
+        </div> <!-- primer div -->
+        
+        <div class="col-md-6 col-lg-3 ">
+            <h2> Diseño Industrial </h2>
+            <p>Se centra en resolver problemas con la creación de productos que no solo sean funcionales, sino también estéticamente atractivos y ergonómicos. En esta área, busco mejorar la experiencia del usuario a través de la innovación, la tecnología y el diseño de manera creativa.</p>
+        </div> <!-- segundo div -->
+        
+        <div class="col-lg-3 ">
+            <h2> Diseño Audiovisual </h2>
+            <p> El diseño audiovisual me permite conectar con lo sensorial, contar historias y transmitir emociones a través del movimiento y el sonido. Utilizando herramientas de video, animación y efectos visuales, esta disciplina me permite crear experiencias inmersivas que capturan al espectador y lo sumergen en universos creativos.</p>
+        </div> <!-- tercer div -->
+        
+        <div class="order-5 order-lg-3">
+            <h1>Algunos de mis proyectos</h1>
+            <p>Mis proyectos combinan diferentes disciplinas del diseño, lo que los hace más completos e innovadores. Al integrar el diseño gráfico, industrial y audiovisual, puedo crear soluciones más creativas y efectivas, ampliando las posibilidades y superando los límites tradicionales.</p>
+        </div> <!-- cuarto div --> <!-- el order va hasta 5 y no hasta 6 pq comienza en 0, como lo dice: https://getbootstrap.com/docs/5.3/utilities/flex/#order -->
+
+        <div class="col-lg-4 order-3">
+            <img src="Mesa de trabajo 3.jpg" class="img-fluid" alt="foto 2">
+        </div> <!-- imagen 1 -->
+
+        <div class="col-lg-4 order-4">
+            <img src="Mesa de trabajo 1.jpg" class="img-fluid" alt="foto 3">
+        </div> <!-- imagen 2 -->
+    </div> 
+</main>
+
+  
+  <footer class="container-fluid bg-dark-subtle">
+      <section>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#miModal">
+              Contacto
+          </button>
+      </section>
+  </footer>
+  
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        'use strict'
+  
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+  
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+  
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+  </script>
+  
